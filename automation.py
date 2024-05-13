@@ -9,7 +9,7 @@ connection = mysql.connector.connect(user='root', password='12345678',host='loca
 # create cursor
 cursor_mysql = connection.cursor()
 
-# Connect to DB2 or PostgreSql
+# Connect to PostgreSql
 # connection details
 dsn_hostname = 'localhost'
 dsn_user='postgres'
@@ -64,7 +64,7 @@ def insert_records(records):
         
     conn.commit()
         
-    print("Registros insertados exitosamente.")
+    print("Records inserted correctly")
 
 
 insert_records(new_records)
